@@ -11,3 +11,12 @@
 #about-us {
     text-align: center;
 }
+
+.col-12 {
+    text-align: center;
+}
+
+body {
+    font-family: "Dancing Script";
+    font-size: 25px;
+}
