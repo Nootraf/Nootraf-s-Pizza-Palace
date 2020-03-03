@@ -57,3 +57,15 @@ body {
 #order-pizza {
     text-align: center;
 }
+
+.row-one {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.row-two {
+    float: right;
+    width: 33.33%;
+    padding: 5px;
+}

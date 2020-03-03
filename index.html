@@ -36,13 +36,15 @@
         <div class="head row">
             <h2 class="col-6">MENU</h2>
         </div>
-        <div class="row one">
+        <div class="row-one">
             <div class="col-12 col-md-6 col-lg-3 ">
                 <img src="images/pepperoni-pizza-1-600x344.jpg" height="230px" width="300px">
             </div>
             <div class="col-12 col-md-6 col-lg-3 ">
                 <img src="images/images (2).jpeg ">
             </div>
+        </div>
+        <div class="row-two">
             <div class="col-12 col-md-6 col-lg-3 ">
                 <img src="images/hawaiian_pizza_sh.0.jpg" height="250px" width="300px">
             </div>
@@ -59,112 +61,50 @@
                     <form class="col-sm-6 offset-sm-3 text-center">
                         <label>Pick your pizza Flavour:</label>
                         <select class="custom-select custom-select-md mb-3 flavour" required>
-                        <option value="vegtikka">Veg Tikka</option>
-                        <option value="chickentikka">Chicken Tikka</option>
-                        <option value="periperi">Peri-Peri Chicken</option>
-                        <option value="bbq">BBQ Steak</option>
-                        <option value="boerewors">Boerewors</option>
-                        <option value="hawaiian">Hawaiian</option>
-                        <option value="mushroom">Chicken and Mushroom</option>
-                        <option value="regina">Regina Pizza</option>
+                        <option value="900">Veg Tikka</option>
+                        <option value="600">Chicken Tikka</option>
+                        <option value="450">Peri-Peri Chicken</option>
+                        <option value="800">BBQ Steak</option>
+                        <option value="600">Hawaiian</option> 
                     </select>
                         <label>Chose your preferred Size:</label>
                         <select class="custom-select custom-select-md mb-3" id="size" required>
-                        <option value="regular">Regular</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
+                        <option value="800">Regular</option>
+                        <option value="1200">Medium</option>
+                        <option value="2000">Large</option>
                     </select>
                         <label for="crust">Choose your favorite Crust:</label>
                         <select class="custom-select custom-select-md mb-3" id="crust" required>
-                        <option value="thin">Thin Crust @ Ksh. 100</option>
-                        <option value="thick">Thick Crust @ Ksh. 150</option>
-                        <option value="flatbread">FlatBread Crust @ sh. 180</option>
-                        <option value="custom">Custom Crust @ sh. 280</option>
+                        <option value="200">Thin Crust @ Ksh. 100</option>
+                        <option value="150">Thick Crust @ Ksh. 150</option>
+                        <option value="100">FlatBread Crust @ sh. 180</option>
+                        <option value="200">Custom Crust @ sh. 280</option>
                     </select>
                         <label>Select Your favourite Toppings</label>
                         <select class="custom-select custom-select-md mb-3" id="toppings" required>
-                        <option value="tomato">Tomato @ sh. 80</option>
-                        <option value="onions">Onions @ sh. 80</option>
-                        <option value="mushroom">Mushroom @ sh. 80</option>
-                        <option value="greenpepper">Green Pepper @ sh. 80</option>
-                        <option value=""></option>
-                        <option value="olives">Olives @ sh. 120</option>
-                        <option value="pineapple">Pineapple @ sh. 120</option>
-                        <option value="sweetcorn">Sweet Corn @ sh. 120</option>
-                        <option value="macon">Macon @ sh. 120</option>
-                        <option value="mince">Mince @ sh. 120</option>
-                        <option value=""></option>
-                        <option value="beef">Beef Peperoni @ sh. 170</option>
-                        <option value="chicken">Periperi Chicken @ sh. 170</option>
+                        <option value="200">Tomato @ sh. 80</option>
+                        <option value="600">Onions @ sh. 80</option>
+                        <option value="80">Mushroom @ sh. 80</option>
+                        <option value="80">Green Pepper @ sh. 80</option>
+                        <option value="90">Olives @ sh. 120</option>
+                        <option value="300">Pineapple @ sh. 120</option>
+                        <option value="70">Sweet Corn @ sh. 120</option>
+                        <option value="60">Macon @ sh. 120</option>
+                        <option value="400">Periperi Chicken @ sh. 170</option>
                     </select>
                         <label for="number">Number of Pizza's</label>
-                        <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
+                        <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" max="12" required>
+
+                        <button class="btn btn-success mx-auto d-block submit" type="submit" id="submit2" onclick="getTotalAmount();"><strong>Checkout</strong></button>
 
 
                     </form>
-                    <a href="#summary">
-                        <button type="submit" class="btn btn-success checkout" id="checkout">
-                        Checkout
-                    </button>
-                    </a>
-
                 </div>
-                <div class="col-sm-2"></div>
-            </div>
-        </div>
-
-        <div class="order-summary" id="sum-order">
-            <h1 class="text-center" id="summary">Order Summary</h1>
-            <h2 class="text-center summary">Hello there, your order is as follows:</h2>
-            <ol id="list" class="text-center sum">
-            </ol>
-            <div class="cdata-overlay">
-                <div class="customerdata row">
-                    <div class="col-sm-3"></div>
-                    <form action="" class="form-group col-sm-6 data">
-                        <input type="text" class="form-control cdata" placeholder="Enter your Name:">
-                        <input type="text" class="form-control cdata" placeholder="Enter your phone number: ">
-                        <input type="text" class="form-control cdata" placeholder="Enter the location: ">
-                        <button class="btn bg-info text-center d-block mx-auto go">Make Delivery</button>
-                    </form>
-
-                    <div class="col-sm-3"></div>
-                </div>
-            </div>
-            <div class="d-block mx-auto text-center">
-                <button class='deliver'>Make Delivery</button>
-                <button class='delivernot'>Pick Up</button>
             </div>
         </div>
     </div>
-
-    <h3><strong>CONTACT US</strong></h3>
-
-    <form id="contactform ">
-        <div class="form-row ">
-            <div class="col-md-6 ">
-                <label for="name "></label>
-                <input type="text " class="form-control " id="name " placeholder="Name... ">
-            </div>
-            <div class="col-md-6 ">
-                <label for="inputEmail "></label>
-                <input type="text " class="form-control " id="inputEmail " placeholder="Email... ">
-            </div>
-        </div>
-        <div class=" form-group border ">
-            <br><textarea class="form-control " id="message " style="height: 300px " placeholder="Your text here... ">
-                        </textarea>
-        </div>
-
-        <button type="submit " id="submit " class="btn btn-primary ">Submit</button>
-    </form>
-    <span id="feedback "></span>
-
-
-
-
-
-
+    </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js " integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin=" anonymous "></script>
     <script src="js/scripts.js "></script>
 </body>
