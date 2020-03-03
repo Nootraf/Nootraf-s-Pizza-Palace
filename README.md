@@ -1,15 +1,13 @@
 
-# {Nootraf's Pizza Palace}
-#### {A local website for pizza ordering}, {Feb 29,2020}
+# Nootraf's Pizza Palace
+#### A local website for pizza ordering, {Feb 29,2020}
 #### By **Fartoon Abdi**
 ## Description
 This website allows the local Kenyan people to easily order affordable pizza and have it delivered at their doorsteps.
 ## Setup/Installation Requirements
-*L 
-* 
-*
-*
-* 
+* Install Linux, Ubuntu
+* Install Visual Studio Code
+* Creation of a repository in Github
 ## Known Bugs
 There are no known bugs in this application/website.
 ## Technologies Used
@@ -38,4 +36,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-Copyright (c) {2020} **{Fartoon Abdi,}**
+Copyright (c) {2020} **{Fartoon Abdi,Nootraf's Pizza Palace}**
